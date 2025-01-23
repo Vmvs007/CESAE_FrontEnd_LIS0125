@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_orange"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTA TAREFAS"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@color/strong_orange"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_introducao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_nova_tarefa"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:minWidth="190dp"/>
+
+        <Button
+            android:id="@+id/button_adicionar_tarefa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADICIONAR"
+            android:backgroundTint="@color/strong_orange"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_a_fazer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/dark_orange"
+        android:text="A Fazer..."/>
+
+    <ListView
+        android:id="@+id/list_view_a_fazer"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/text_concluida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/dark_orange"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Concluídas"/>
+
+    <ListView
+        android:id="@+id/list_view_concluida"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+</LinearLayout>
