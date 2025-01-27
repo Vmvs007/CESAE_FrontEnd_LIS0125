@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fullscreenBackgroundColor"
+    android:theme="@style/ThemeOverlay.RelogioApp.FullscreenContainer"
+    tools:context=".FullscreenActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:id="@+id/clock_horas_minutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="hh:mm"
+            android:format24Hour="hh:mm"
+            android:text="00:00"
+            android:textSize="100sp"/>
+
+        <TextClock
+            android:id="@+id/clock_segundos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format12Hour="ss"
+            android:format24Hour="ss"
+            android:text="00:00"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <CheckBox
+            android:id="@+id/check_nivel_bateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/nivel_de_bateria"/>
+
+        <TextView
+            android:id="@+id/text_nivel_bateria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/nivel_de_bateria"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

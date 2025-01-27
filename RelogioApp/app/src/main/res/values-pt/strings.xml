@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RelogioApp</string>
+    <string name="landscape_cumprimento">Olá</string>
+    <string name="nivel_de_bateria">"Nível da Bateria: "</string>
+</resources>
